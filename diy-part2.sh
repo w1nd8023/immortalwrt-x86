@@ -20,5 +20,6 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 git clone https://github.com/gdy666/luci-app-lucky.git package/luci-app-lucky
 
+# Wan settings
 sed -i "s/net/eth1/net/eth0/g" package/base-files/files/etc/board.d/99-default_network
 sed -i "s/wan 'eth1'/wan 'eth0'/g" package/base-files/files/etc/board.d/99-default_network
